@@ -9,14 +9,14 @@ export default function AlphabetNav() {
     'Т',
     '8',
   ];
-
+  const filteredCharacters = characters.filter(character => character !== 'Q' && character !== 'J');
   return (
     <div className="alphabet-div mx-auto my-2 bg-[#323232] px-2 py-4">
       <ul className="mt-6 space-y-1">
-        {characters.map((character) => (
+        {filteredCharacters.map((character) => (
           <li key={character}>
             <Link
-              href={`/dashboard/${character}`}
+              href={`#${character}`}
               className="block rounded-lg bg-none px-2 py-0 text-sm font-semibold leading-tight text-[#64D28B] hover:text-[#64D28B]/75"
             >
               {character}

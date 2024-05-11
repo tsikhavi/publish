@@ -14,7 +14,7 @@ const Card: React.FC<CardProps> = ({ title, description }) => (
         </h4>
       </Link>
 
-      <p className="text-[12px] tracking-wide text-[#C1C1C1] ">{description}</p>
+      <p className="tracking-wide text-[8px] text-[#C1C1C1] ">{description}</p>
     </div>
   </div>
 );
