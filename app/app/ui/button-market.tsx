@@ -87,9 +87,9 @@ const chunkedButtonData = chunkArray(
 
 export default function ButtonMarket() {
   return (
-    <div className="-mr-20 mt-10 flex h-fit w-full flex-col flex-wrap overflow-x-auto overflow-hidden bg-gradient-to-b from-[#000000]/40 to-[#272727] py-8">
+    <div className="mt-10 flex h-fit w-full flex-col flex-wrap overflow-hidden hover:overflow-x-scroll bg-gradient-to-b from-[#000000]/40 to-[#272727] py-8">
       {chunkedButtonData.map((row, rowIndex) => (
-        <div className="flex flex-row" key={rowIndex}>
+        <div className="-ml-10 flex flex-row" key={rowIndex}>
           {row.map(({ src, alt, text }, index) => (
             <div className="w-1/10 p-2" key={src}>
               <Buttons className="px-8 h-10 w-full flex-row justify-start whitespace-nowrap text-center text-xs">
