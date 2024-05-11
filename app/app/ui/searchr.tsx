@@ -18,10 +18,7 @@ const SearchR = () => {
 
   return (
     <div className="flex-shrink-2 relative mx-60 flex h-16 flex-1 py-2">
-      <label htmlFor="Search" className="sr-only">
-        {' '}
-        Search{' '}
-      </label>
+      <label htmlFor="Search" className="sr-only">Search</label>
 
       <input
         type="text"
