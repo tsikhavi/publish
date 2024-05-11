@@ -92,7 +92,7 @@ export default function ButtonMarket() {
         <div className="flex flex-row" key={rowIndex}>
           {row.map(({ src, alt, text }, index) => (
             <div className="w-1/10 p-2" key={src}>
-              <Buttons className="inline-flex px-4 h-full w-full flex-row items-center justify-start whitespace-nowrap text-center text-[10px]">
+              <Buttons className="px-8 h-10 w-full flex-row justify-start whitespace-nowrap text-center text-xs">
                 <Image
                   src={src}
                   alt={alt}
