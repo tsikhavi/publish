@@ -27,7 +27,7 @@ const Slider = () => {
 
   return (
     <>
-      <div className="relative mx-[60px] mt-20  h-48 rounded-md bg-gradient-to-r from-[#434343] to-[#255536] p-6">
+      <div className="relative mx-[272px] mt-44  h-80 rounded-md bg-gradient-to-r from-[#434343] to-[#255536] p-6">
         <div className="absolute -right-2 -top-10 flex space-x-2">
           <button
             onClick={handlePrev}
@@ -67,8 +67,8 @@ const Slider = () => {
         <h1 className="mb-4 text-2xl font-bold text-white">
           {divs[currentDiv].title}
         </h1>
-        <p className="mb-4 text-xs text-white">{divs[currentDiv].text}</p>
-        <button className="my-2 w-[1/3] rounded-[5px] bg-emerald-400 px-5 py-2.5 text-xs font-semibold tracking-wide text-[#F3F3F3] hover:bg-emerald-400/75">
+        <p className="mb-4 mt-20 text-xs text-white">{divs[currentDiv].text}</p>
+        <button className="mt-20 w-[1/3] rounded-[5px] bg-emerald-400 px-5 py-2.5 text-xs font-semibold tracking-wide text-[#F3F3F3] hover:bg-emerald-400/75">
           Стать продавцом
         </button>
       </div>

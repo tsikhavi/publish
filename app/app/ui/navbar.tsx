@@ -27,7 +27,7 @@ const NavLink = ({ children, href }: { children: ReactNode; href: string }) => {
 export default function Navbar() {
   return (
     <header className="bg-shark-950 px-20">
-      <div className="mx-auto flex h-12 max-w-screen-xl items-center gap-8 px-4 py-2 sm:px-6 sm:py-6 lg:px-8">
+      <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 py-2 sm:px-6 sm:py-6 lg:px-8">
         <Link className="block" href="#">
           <span className="sr-only">Home</span>
           <Image

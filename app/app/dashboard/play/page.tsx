@@ -26,10 +26,14 @@ export default function Page() {
         <section className="mt-0  bg-[url('/landing-play.png')]  ">
           <div className=" element my-0 h-auto px-0  ">
             <div className="z-10 ml-10 pb-0  pt-10 text-start">
-              <h1 className="my-10 font-bold  leading-normal text-white  sm:block sm:text-4xl">
+              <h1 className="mt-8 font-bold  leading-normal text-white  sm:block sm:text-4xl">
                 {cardTitle}
               </h1>
-              <p className="text-wrap mr-80 pr-40 leading-normal text-white sm:block">
+              <p className="text-wrap mr-80 pr-20 text-[14px] leading-normal text-white sm:block">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi
+                officia corrupti quaerat enim quidem deserunt quisquam nostrum
+                error, ducimus nam tenetur minus? Aliquam quaerat nemo neque
+                eius beatae. Est, rem.
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi
                 officia corrupti quaerat enim quidem deserunt quisquam nostrum
                 error, ducimus nam tenetur minus? Aliquam quaerat nemo neque
@@ -39,14 +43,14 @@ export default function Page() {
                 {buttonLabels.map((label, index) => (
                   <Buttons
                     key={index}
-                    className="mx-2 inline-flex h-10 w-full flex-row items-center justify-start whitespace-nowrap px-10 text-center text-[8px] hover:bg-[#64D28B]"
+                    className="mx-2 inline-flex rounded-full py-5 h-10 w-fit flex-row items-center justify-start whitespace-nowrap px-8 text-center text-[14px] hover:bg-[#64D28B]"
                   >
                     {label}
                   </Buttons>
                 ))}
               </div>
-              <div className="inline-flex space-x-2">
-                <Buttons className="ml-0 mr-4 inline-flex h-10 w-full flex-row items-center justify-start space-x-1 whitespace-nowrap rounded-md px-10 text-center text-[8px] text-[#F3F3F3] ring-[#827C7C] hover:bg-none hover:ring-[#827C7C]">
+              <div className="inline-flex pt-6 space-x-2">
+                <Buttons className="ml-0 mr-4 inline-flex text-[14px] h-10 w-[284px] w-fixed flex-row items-center justify-start space-x-1 whitespace-nowrap rounded-md px-10 text-center text-[#F3F3F3] ring-[#827C7C] hover:bg-none hover:ring-[#827C7C]">
                   <Image
                     src="/Images/icon.png"
                     alt="Автоматическая доставка"
@@ -63,7 +67,7 @@ export default function Page() {
                     className="ml-2 h-4 w-4"
                   />
                 </Buttons>
-                <Buttons className="mx-2 inline-flex h-10 w-full flex-row items-center justify-start whitespace-nowrap rounded-md px-10 text-center text-[8px] text-[#F3F3F3] ring-[#827C7C] hover:bg-none hover:ring-[#827C7C]">
+                <Buttons className="mx-2 inline-flex h-10 w-[284px] w-fixed text-[14px] flex-row items-center justify-start whitespace-nowrap rounded-md px-10 text-center text-[#F3F3F3] ring-[#827C7C] hover:bg-none hover:ring-[#827C7C]">
                   Только продавцы онлайн
                   <Image
                     src="/Images/icon-1.png"
@@ -81,7 +85,7 @@ export default function Page() {
                     type="text"
                     id="Search"
                     placeholder="Поиск по описанию "
-                    className="placeholder:font-regular mx-2 inline-flex h-10 w-full flex-row items-center justify-between whitespace-nowrap rounded-md bg-inherit px-10 py-2.5 pl-10 text-left text-[8px] text-[#F3F3F3] ring-1 ring-[#827C7C]  placeholder:text-xs   placeholder:text-[#F3F3F3] hover:border-[#827C7C] hover:bg-none focus:ring-1 focus:ring-inset focus:ring-[#827C7C] sm:text-sm"
+                    className="placeholder:font-regular mx-2 inline-flex h-10 w-[212px] w-fixed flex-row items-center justify-between whitespace-nowrap rounded-md bg-inherit px-10 py-2.5 pl-10 text-left text-[14px] text-[#F3F3F3] ring-1 ring-[#827C7C]  placeholder:text-xs   placeholder:text-[#F3F3F3] hover:border-[#827C7C] hover:bg-none focus:ring-1 focus:ring-inset focus:ring-[#827C7C] sm:text-sm"
                   />
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +110,7 @@ export default function Page() {
                     type="text"
                     id="Search"
                     placeholder="Поиск по префиксу "
-                    className="placeholder:font-regular mx-2 inline-flex h-10 w-full flex-row items-center justify-between whitespace-nowrap rounded-md bg-inherit px-10 py-2.5 pl-10 text-left text-[8px] text-[#F3F3F3] ring-1 ring-[#827C7C]  placeholder:text-xs   placeholder:text-[#F3F3F3] hover:border-[#827C7C] hover:bg-none focus:ring-1 focus:ring-inset focus:ring-[#827C7C] sm:text-sm"
+                    className="placeholder:font-regular mx-2 inline-flex h-10 w-[212px] w-fixed flex-row items-center justify-between whitespace-nowrap rounded-md bg-inherit px-10 py-2.5 pl-10 text-left text-[14px] text-[#F3F3F3] ring-1 ring-[#827C7C]  placeholder:text-xs   placeholder:text-[#F3F3F3] hover:border-[#827C7C] hover:bg-none focus:ring-1 focus:ring-inset focus:ring-[#827C7C] sm:text-sm"
                   />
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -123,7 +127,7 @@ export default function Page() {
                     />
                   </svg>
                 </div>
-                <Buttons className="ml-4 inline-flex h-10 w-fit flex-row items-center justify-start space-x-1 whitespace-nowrap rounded-md px-10 text-center text-[8px] text-[#F3F3F3] ring-[#827C7C] hover:bg-none hover:ring-[#827C7C]">
+                <Buttons className="-mr-40 inline-flex h-10 w-[189px] w-fixed flex-row items-center justify-start space-x-1 whitespace-nowrap rounded-md px-10 text-center text-[14px] text-[#F3F3F3] ring-[#827C7C] hover:bg-none hover:ring-[#827C7C]">
                   Создать публикацию
                 </Buttons>
               </div>
@@ -161,7 +165,7 @@ export default function Page() {
 
             {/**table */}
             <div dir='rtl'>
-            <Buttons className="ml-4 mt-8 mx-20 inline-flex h-10 w-fit flex-row items-center justify-start space-x-1 whitespace-nowrap rounded-md px-10 text-center text-[8px] text-[#F3F3F3] ring-[#459963] hover:bg-none hover:ring-[#459963]">
+            <Buttons className="ml-4 mt-8 mx-20 inline-flex h-10 w-fit flex-row items-center justify-start space-x-1 whitespace-nowrap rounded-md px-10 text-center text-[14px] text-[#F3F3F3] ring-[#459963] hover:bg-none hover:ring-[#459963]">
             Показать еще предложения
           </Buttons></div>
         <div className="ml-20 mr-60 my-20 text-xs bg-[#272727] text-[#636363]">

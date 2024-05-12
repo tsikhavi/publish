@@ -17,7 +17,7 @@ export default function AlphabetNav() {
           <li key={character}>
             <Link
               href={`#${character}`}
-              className="block rounded-lg bg-none px-2 py-0 text-sm font-semibold leading-tight text-[#64D28B] hover:text-[#64D28B]/75"
+              className="block rounded-lg bg-none px-2 py-0 text-[14px] font-semibold leading-tight text-[#64D28B] hover:text-[#64D28B]/75"
             >
               {character}
             </Link>

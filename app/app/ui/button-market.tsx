@@ -4,46 +4,53 @@ import { Buttons } from './buttons';
 
 // Define the button data
 const buttonData = [
-  { src: '/Images/world-of-warcraft.png', alt: '', text: 'World of Warcraft' },
-  { src: '/Images/battle-net.png', alt: 'battle-net', text: 'Battle.Net' },
-  {
-    src: '/Images/league-of-legends.png',
-    alt: 'league-of-legends',
-    text: 'League of Legends',
-  },
-  {
-    src: '/Images/apex-legends.png',
-    alt: 'apex-legends',
-    text: 'Apex Legends',
-  },
-  { src: '/Images/minecraft.png', alt: 'minecraft', text: 'Minecraft' },
-  {
-    src: '/Images/electronic-arts.png',
-    alt: 'electronic-arts',
-    text: 'Electronic Arts',
-  },
-  { src: '/Images/nba-2k.png', alt: 'nba-2k', text: 'NBA 2K' },
-  { src: '/Images/fortnite.png', alt: 'fortnite', text: 'Fortnite' },
-  { src: '/Images/warface.png', alt: '', text: 'Warface' },
   {
     src: '/Images/forza-horizon.png',
     alt: 'forza-horizon',
     text: 'Forza Horizon',
   },
-  { src: '/Images/dota2.png', alt: 'dota2', text: 'Dota 2' },
-  { src: '/Images/gta5online.png', alt: 'gta5online', text: 'GTA 5 Online' },
-  { src: '/Images/pubg.png', alt: 'pubg', text: 'PUBG' },
-  { src: '/Images/app-store.png', alt: 'app-store', text: 'App Store' },
-  { src: '/Images/gog.png', alt: 'gog', text: 'GOG' },
-  { src: '/Images/epic-games.png', alt: 'epic-games', text: 'Epic Games' },
-  { src: '/Images/roblox.png', alt: 'roblox', text: 'Roblox' },
-  { src: '/Images/xbox.png', alt: 'xbox', text: 'Xbox' },
+  { src: '/Images/warface.png', alt: '', text: 'Warface' }, 
+  { src: '/Images/fortnite.png', alt: 'fortnite', text: 'Fortnite' },
+ { src: '/Images/nba-2k.png', alt: 'nba-2k', text: 'NBA 2K' },
   {
+    src: '/Images/electronic-arts.png',
+    alt: 'electronic-arts',
+    text: 'Electronic Arts',
+  },
+  { src: '/Images/minecraft.png', alt: 'minecraft', text: 'Minecraft' },
+  
+  
+ {
+    src: '/Images/apex-legends.png',
+    alt: 'apex-legends',
+    text: 'Apex Legends',
+  },
+  
+  { src: '/Images/battle-net.png', alt: 'battle-net', text: 'Battle.Net' },
+  { src: '/Images/world-of-warcraft.png', alt: '', text: 'World of Warcraft' },
+ {
+    src: '/Images/league-of-legends.png',
+    alt: 'league-of-legends',
+    text: 'League of Legends',
+  },
+{ src: '/Images/war-thunder.png', alt: 'war-thunder', text: 'War Thunder' },
+{
     src: '/Images/call-of-duty.png',
     alt: 'call-off-duty',
     text: 'Call Of Duty',
-  },
-  { src: '/Images/war-thunder.png', alt: 'war-thunder', text: 'War Thunder' },
+  },  
+    { src: '/Images/xbox.png', alt: 'xbox', text: 'Xbox' },
+
+ { src: '/Images/roblox.png', alt: 'roblox', text: 'Roblox' },
+  { src: '/Images/pubg.png', alt: 'pubg', text: 'PUBG' },
+ { src: '/Images/epic-games.png', alt: 'epic-games', text: 'Epic Games' },
+  { src: '/Images/gog.png', alt: 'gog', text: 'GOG' },
+  
+   { src: '/Images/app-store.png', alt: 'app-store', text: 'App Store' },
+  { src: '/Images/gta5online.png', alt: 'gta5online', text: 'GTA 5 Online' },
+  { src: '/Images/dota2.png', alt: 'dota2', text: 'Dota 2' },
+  
+  
   { src: '/Images/ufc.png', alt: 'ufc', text: 'UFC' },
   { src: '/Images/spotify.png', alt: 'spotify', text: 'Spotify' },
   { src: '/Images/vkontakte.png', alt: '', text: 'Вконтакте' },
@@ -87,25 +94,28 @@ const chunkedButtonData = chunkArray(
 
 export default function ButtonMarket() {
   return (
-    <div dir='rtl' className="  mt-10 flex h-fit w-screen w-fixed flex-col flex-wrap overflow-hidden hover:overflow-x-scroll bg-gradient-to-b from-[#000000]/40 to-[#272727] py-8">
+    <div className='relative'>
+    <div dir='rtl' className="snap-x snap-start -scroll-ml-[20px] object-contain  mt-0 flex h-fit w-screen w-fixed flex-col flex-wrap overflow-hidden hover:overflow-x-scroll bg-gradient-to-b from-[#000000]/40 to-[#272727] py-2">
       {chunkedButtonData.map((row, rowIndex) => (
-        <div className=" flex flex-row -ml-36 pr-30 pl-10" key={rowIndex}>
+        <div className=" flex flex-row " key={rowIndex}>
           {row.map(({ src, alt, text }, index) => (
-            <div className="w-1/10 p-2" key={src}>
-              <Buttons className="px-8 h-10 flex-row rounded-2xl justify-start whitespace-nowrap text-center text-xs">
-                <Image
+            <div className=" pb-2 pt-0 px-2 gap-[10px]" key={src}>
+              <Buttons className="px-12 h-16 flex-row rounded-[30px] justify-start whitespace-nowrap text-center text-xs">
+               {text} 
+               <Image
                   src={src}
                   alt={alt}
-                  width={12}
-                  height={12}
+                  width={32}
+                  height={32}
                   className="m-1 inline-flex"
                 />
-                {text}
+                
               </Buttons>
             </div>
           ))}
         </div>
       ))}
+    </div>
     </div>
   );
 }
